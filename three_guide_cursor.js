@@ -1,6 +1,6 @@
 var ThreeGuideCursor = function(params){
   this.scene = params.scene;
-  this.scale = 0;
+  this.scale = 1;
 };
 
 ThreeGuideCursor.prototype.render = function(){
