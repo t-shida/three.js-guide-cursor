@@ -23,7 +23,7 @@ ThreeGuideCursor.prototype._create_line = function(params){
   geometry.vertices.push(new THREE.Vector3(params.starting[0], params.starting[1], params.starting[2]));
   geometry.vertices.push(new THREE.Vector3(params.ending[0], params.ending[1], params.ending[2]));
   var line = new THREE.Line(geometry, material);
-  if (this.scale > 0) line.scale.set(this.scale, this.scale, this.scale);
+  line.scale.set(this.scale, this.scale, this.scale);
   this.scene.add(line);
 };
 
